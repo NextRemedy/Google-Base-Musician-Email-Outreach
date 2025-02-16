@@ -1,0 +1,285 @@
+/* General Page Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom right, #4a90e2, #623aa2);
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #001f3f;
+}
+
+.logo {
+  height: 50px;
+}
+
+.landing-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #87CEEB;
+}
+
+.nav-link.sign-up {
+  color: #87CEEB;
+}
+
+.nav-link.sign-up:hover {
+  color: #5FB6E5;
+}
+
+.landing-content {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+.landing-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.landing-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.get-started {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.get-started:hover {
+  opacity: 0.9;
+}
+
+.landing-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #001f3f;
+  font-size: 14px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  color: #333;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 100%;
+  overflow: visible;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group input {
+  width: 93%;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.input-group input:focus {
+  border-color: #4299e1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  background-color: white;
+}
+
+.submit-button {
+  background-color: #4299e1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+.submit-btn-here{
+  background-color: #4299e1;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  
+}
+.submit-button:hover {
+  background-color: #3182ce;
+}
+
+.signup-form .submit-button {
+  background-color: #87CEEB;
+}
+
+.signup-form .submit-button:hover {
+  background-color: #5FB6E5;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #d2ffd0;
+  color: #2d3748;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.google-button:hover {
+  background-color: #81ff65;
+  border-color: #cbd5e0;
+}
+
+.google-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #2d3748;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .submit-button,
+  .google-button {
+    font-size: 14px;
+  }
+}

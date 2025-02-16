@@ -1,0 +1,99 @@
+/* Container for the payment page */
+.payment-page-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Payment page header */
+.payment-page-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 28px;
+}
+
+/* Payment form */
+.payment-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Input field styling */
+.payment-form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.payment-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.payment-form-input:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Stripe CardElement styling */
+.StripeElement {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+}
+
+/* Form labels */
+.ant-form-item-label > label {
+  color: white !important;
+}
+
+/* Submit button */
+.payment-submit-btn {
+  width: 100%;
+  height: 40px;
+  background: #4caf50 !important;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.payment-submit-btn:hover {
+  background: #45a049 !important;
+  transform: translateY(-1px);
+}
+
+.payment-submit-btn:active {
+  transform: translateY(0);
+}
+
+.payment-error {
+  text-align: center;
+  color: #ff4d4f;
+  background: rgba(255, 77, 79, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .payment-page-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}

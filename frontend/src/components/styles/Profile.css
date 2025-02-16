@@ -1,0 +1,80 @@
+/* Profile Page */
+.profile-page {
+  padding: 20px;
+  background: #f5f7fa;
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Title */
+.profile-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #001529;
+  margin-bottom: 20px;
+}
+
+/* Profile Information Box */
+.profile-info {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Profile Picture */
+.profile-picture {
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #007bff;
+}
+
+/* Edit Profile Button */
+.update-profile-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.update-profile-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .profile-info {
+    padding: 15px;
+  }
+
+  .update-profile-btn {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

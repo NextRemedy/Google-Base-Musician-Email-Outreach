@@ -1,0 +1,76 @@
+/* Settings Page */
+.settings-page {
+  padding: 20px;
+  background: #f5f7fa;
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Settings Title */
+.settings-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #001529;
+  margin-bottom: 20px;
+}
+
+/* Settings Options Container */
+.settings-options {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.settings-item span {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Tooltip Icon */
+.settings-item .anticon-info-circle {
+  color: #007bff;
+  font-size: 16px;
+}
+
+/* Save Changes Button */
+.save-settings-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.save-settings-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-options {
+    padding: 15px;
+  }
+
+  .save-settings-btn {
+    width: 100%;
+  }
+}
